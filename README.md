@@ -2,4 +2,4 @@
 
 # Schema
 
-![schema](./assets/yumfood-schema.png "schema")
+![schema](./assets/yumfoodschema.png "schema")
