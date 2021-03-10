@@ -1,4 +1,4 @@
-const { Order, Dish, Restaurant } = require('../../models')
+const { Order, Dish, Restaurant, User } = require('../../models')
 
 class OrderController {
   static async findAll (req, res, next) {
@@ -10,6 +10,10 @@ class OrderController {
           },
           {
             model: Dish
+          },
+          {
+            model: User,
+            attributes: ['id', 'name', 'email']
           }
         ]
       })
