@@ -20,7 +20,7 @@ class OrderController {
 
       res.status(200).json({ data: orders })
     } catch (error) {
-      console.log(error)
+      next(error)
     }
   }
 
@@ -34,7 +34,7 @@ class OrderController {
 
       res.status(200).json({ data: order })
     } catch (error) {
-      console.log(error)
+      next(error)
     }
   }
 }

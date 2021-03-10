@@ -34,7 +34,7 @@ class VendorController {
       res.status(200).json({ data: restaurants })
 
     } catch (error) {
-      console.log(error)
+      next(error)
     }
   }
 
@@ -51,7 +51,7 @@ class VendorController {
       res.status(200).json({ data: restaurant })
 
     } catch (error) {
-      console.log(error)
+      next(error)
     }
   }
 
@@ -72,7 +72,7 @@ class VendorController {
 
       res.status(200).json({ data: restaurant })
     } catch (error) {
-      console.log(error)
+      next(error)
     }
   }
 
@@ -92,7 +92,7 @@ class VendorController {
 
       res.status(200).json({ data: restaurant[1][0] })
     } catch (error) {
-      console.log(error)
+      next(error)
     }
   }
 
@@ -108,7 +108,7 @@ class VendorController {
 
       res.status(200).json({ message: "Data deleted" })
     } catch (error) {
-      console.log(error)
+      next(error)
     }
   }
 }
