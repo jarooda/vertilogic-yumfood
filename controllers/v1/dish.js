@@ -20,7 +20,7 @@ class DishController {
 
       res.status(200).json({ data: dish })
     } catch (error) {
-      console.log(error)
+      next(error)
     }
   }
 
@@ -35,7 +35,7 @@ class DishController {
       res.status(200).json({ data: dish })
 
     } catch (error) {
-      console.log(error)
+      next(error)
     }
   }
 }
